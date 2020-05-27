@@ -1,0 +1,21 @@
+{
+  "name": "pattern_for_coding-questions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "testwatch": "jest --watchAll"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^25.1.2",
+    "collections": "^5.1.9"
+  },
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "eslint-plugin-jest": "^23.13.1",
+    "jest": "^26.0.1"
+  }
+}
