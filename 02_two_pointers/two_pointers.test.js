@@ -116,3 +116,85 @@ describe('Subarrays with Product Less than a Target', () => {
         expect(twoPointer.subarraysWithProductLessThanATarget(target, input)).toEqual(output)
     })
 })
+
+describe('Dutch National Flag Problem', () => {
+    it('accept [1, 0, 2, 1, 0], and return [0 0 1 1 2]', () => {
+        const input = [1, 0, 2, 1, 0]
+        const output = [0, 0, 1, 1, 2]
+        expect(twoPointer.dutchNationalFlagProblem(input)).toEqual(output)
+    })
+
+    it('accept [2, 2, 0, 1, 2, 0], and return [0, 0, 1, 2, 2, 2]', () => {
+        const input = [2, 2, 0, 1, 2, 0]
+        const output = [0, 0, 1, 2, 2, 2]
+        expect(twoPointer.dutchNationalFlagProblem(input)).toEqual(output)
+    })
+})
+
+describe('Quadruple Sum to Target', () => {
+    it('accepts Input: [4, 1, 2, -1, 1, -3], target=1, should return [-3, -1, 1, 4], [-3, 1, 1, 2]', () => {
+        const target = 1
+        const input = [4, 1, 2, -1, 1, -3]
+        const output = [[-3, -1, 1, 4], [-3, 1, 1, 2]]
+        expect(twoPointer.quadrupleSumToTarget(target, input)).toEqual(output)
+    })
+
+    it('accepts Input: [2, 0, -1, 1, -2, 2], target=2, should return [-2, 0, 2, 2], [-1, 0, 1, 2]', () => {
+        const target = 2
+        const input = [2, 0, -1, 1, -2, 2]
+        const output = [[-2, 0, 2, 2], [-1, 0, 1, 2]]
+        expect(twoPointer.quadrupleSumToTarget(target, input)).toEqual(output)
+    })
+})
+
+describe('Comparing Strings containing Backspaces', () => {
+    it('accepts Input: str1="xy#z", str2="xzz#", should return true', () => {
+        const str1 = "xy#z"
+        const str2 = "xzz#"
+        expect(twoPointer.compareStringContainBackspaces(str1, str2)).toBeTruthy()
+    })
+
+    it('accepts Input: str1="xy#z", str2="xyz#", should return false', () => {
+        const str1 = "xy#z"
+        const str2 = "xyz#"
+        expect(twoPointer.compareStringContainBackspaces(str1, str2)).toBeFalsy()
+    })
+
+    it('accepts Input: str1="xp#", str2="xyz##", should return true', () => {
+        const str1 = "xp#"
+        const str2 = "xyz##"
+        expect(twoPointer.compareStringContainBackspaces(str1, str2)).toBeTruthy()
+    })
+
+    it('accepts Input: str1="xywrrmp", str2="xywrrmu#p", should return true', () => {
+        const str1 = "xywrrmp"
+        const str2 = "xywrrmu#p"
+        expect(twoPointer.compareStringContainBackspaces(str1, str2)).toBeTruthy()
+    })
+})
+
+describe('Minimum Window Sort', () => {
+    it('accepts [1, 2, 5, 3, 7, 10, 9, 12], should return 5', () => {
+        const input = [1, 2, 5, 3, 7, 10, 9, 12]
+        const output = 5
+        expect(twoPointer.minimumWindowSort(input)).toEqual(output)
+    })
+
+    it('accept [1, 3, 2, 0, -1, 7, 10], should return 5', () => {
+        const input = [1, 3, 2, 0, -1, 7, 10]
+        const output = 5
+        expect(twoPointer.minimumWindowSort(input)).toEqual(output)
+    })
+
+    it('accepts [1, 2, 3], and should return: 0', () => {
+        const input = [1, 2, 3]
+        const output = 0
+        expect(twoPointer.minimumWindowSort(input)).toEqual(output)
+    })
+
+    it('accepts [3, 2, 1], and should return 3', () => {
+        const input = [3, 2, 1]
+        const output = 3
+        expect(twoPointer.minimumWindowSort(input)).toEqual(output)
+    })
+})
