@@ -120,7 +120,7 @@ const cyclicSort = {
         let i = 0
         while (i < n) {
             const j = nums[i] - 1
-            if (j >= 0 && nums[i] !== nums[j]) {
+            if (nums[i] > 0 && nums[i] <= n && nums[i] !== nums[j]) {
                 [nums[j], nums[i]] = [nums[i], nums[j]]
             } else {
                 i += 1
